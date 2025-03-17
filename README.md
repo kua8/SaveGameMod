@@ -34,6 +34,36 @@ This mod enhances the gameplay by adding a convenient save functionality to the 
   3. BaseSaveables class methods
   4. Original SaveManager methods
 
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/kua8/SaveGameMod.git
+cd SaveGameMod
+```
+
+2. Build the project:
+```bash
+dotnet build /p:Configuration=Release
+```
+
+3. Copy the compiled mod files from `bin/Release` to your game's mod directory
+4. Launch the game with MelonLoader
+5. The mod should be automatically detected and loaded
+
+## Building from Source
+
+### Prerequisites
+- Visual Studio 2019 or higher
+- .NET Framework 4.7.2 or higher
+- MelonLoader development dependencies
+
+### Build Steps
+1. Open `SaveMod.csproj` in Visual Studio
+2. Restore NuGet packages if needed
+3. Build the solution in Release configuration
+4. Find the compiled mod in the `bin/Release` directory
+
 ## Technical Details
 
 ### Initialization
@@ -75,6 +105,10 @@ This mod enhances the gameplay by adding a convenient save functionality to the 
 - Save functionality requires the game's internal save system to be available
 - Button only appears in the main game scene
 - Operates silently without cluttering the console with messages
+
+## Contributing
+
+Feel free to submit issues and pull requests. Please ensure you follow the existing code style and include appropriate tests.
 
 ## License
 
